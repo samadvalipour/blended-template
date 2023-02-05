@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en,fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./asset/css/daisyui.css">
+    <link rel="stylesheet" href="./asset/css/Vazirmatn-font-face.css">
+    <link rel="stylesheet" href="./asset/css/tailwind.css">
+    <title>blended</title>
+</head>
+
+<body dir="rtl" class="bg-base-100" style="font-family: Vazirmatn;">
+
+    <div class="drawer drawer-mobile">
+        <input id="my-drawer-2" type="checkbox" class="drawer-toggle" />
+        <div class="drawer-content flex flex-col items-center ">
+            <!-- Page content here -->
+            <div class="w-full navbar bg-base-100 border-b lg:hidden">
+                <div class="flex-none">
+                    <label for="my-drawer-2" class="btn btn-square btn-ghost">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            class="inline-block w-6 h-6 stroke-current">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </label>
+                </div>
+            </div>
+            <div class="flex flex-col w-full h-fit">
+                <div class="h-fit mb-5">
+                    <div class="w-full">
+                        <video id="video" class="w-full" controls src=""></video>
+                    </div>
+                </div>
+
+                <div id="exercises" class="px-2 md:px-4 lg:px-8 flex flex-col justify-center items-center py-12 gap-5">
+                </div>
+            </div>
+        </div>
+        <div class="drawer-side ">
+            <label for="my-drawer-2" class="drawer-overlay"></label>
+            <ul class="menu p-4 w-80 h-full bg-base-100 text-base-content border-l">
+                <div class="w-full navbar bg-base-100 border-b pb-4 items-center justify-center">
+                    <img class="w-1/3" src="./asset/svg/blended logo.svg" alt="" srcset="">
+                </div>
+                <div id="course_title" class="w-full navbar border-b mb-3 justify-center">
+                    عنوان دوره  
+                </div>
+                <div id="syllabus" class="flex flex-col gap-1">
+                </div>
+                <!-- Sidebar content here -->
+            </ul>
+        </div>
+    </div>
+
+    <script src="./CourseContent.js"></script>
+    <script src="./asset/js/injectsylabus.js"></script>
+    <script src="./asset/js/script.js"></script>
+</body>
+
+</html>
